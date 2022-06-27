@@ -1,6 +1,7 @@
-# atividade-fintech
+# <b>ATIVIDADE-FINTECH</b>
 
 <h2>SOBRE<h2>
+
   Projeto criado para a realização de uma atividade proposta pela FIAP
   
 <h2>TECNLOGIAS UTILIZADAS<h2>
@@ -17,6 +18,7 @@
   <br>✔ Dashboard<br>
 
   <h2>TELAS A SEREM FEITAS<h2>
+  
   <br>- Cadastro<br>
   <br>- Perfil<br>
   <br>- Configurações<br>
@@ -26,7 +28,9 @@
   <br>- Carteira<br>
 
   <h2>FUNCIONALIDADES IMPLEMENTADAS<h2>
+  
   <br>Em desenvolvimento<br>
 
-   <h2>FUNCIONALIDADES A SEREM IMPLEMENTADAS<h2>
-  <br>- Validação de Login/Cadastro<br>
+  <h2>FUNCIONALIDADES A SEREM IMPLEMENTADAS<h2>
+   
+  <br>-Validação de Login/Cadastro<br>

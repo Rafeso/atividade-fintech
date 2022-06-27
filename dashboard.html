@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles-dash.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class="bi bi-piggy-bank-fill me-1"></i>FINTECH</div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                        class="bi bi-speedometer me-2"></i>Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="bi bi-clipboard2-check me-2"></i>Objetivos</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="bi bi-graph-up-arrow me-2"></i>Investimentos</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="bi bi-graph-down-arrow me-2"></i>Despesas</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="bi bi-wallet me-2"></i>Carteira</a>
+                <a href="index.html" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                        class="bi bi-box-arrow-left me-2"></i>Sair</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Content page -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-justify-left text-light fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0 text-light">Dashboard</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person me-2"></i>Rafael
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                <li><a class="dropdown-item" href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="col-md-3">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2 text-light">R$1000</h3>
+                                <p class="fs-5 text-light">Ganhos</p>
+                            </div>
+                            <i class="bi bi-cash fs-1 text-light p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2 text-light">R$250</h3>
+                                <p class="fs-5 text-light">Despesas</p>
+                            </div>
+                            <i class="bi bi-graph-down-arrow text-light fs-1 text-light p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2 text-light">5</h3>
+                                <p class="fs-5 text-light">Objetivos</p>
+                            </div>
+                            <i class="bi bi-clipboard2-check fs-1 text-light p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2 text-light">R$5000</h3>
+                                <p class="fs-5 text-light">Carteira</p>
+                            </div>
+                            <i class="bi bi-wallet fs-1 text-light p-3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <h3 class="fs-4 mb-3 text-light">Gastos Recentes</h3>
+                    <div class="col">
+                        <table class="table bg-white rounded shadow-sm  table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" width="50">#</th>
+                                    <th scope="col">Produto</th>
+                                    <th scope="col">Loja</th>
+                                    <th scope="col">Preço</th>
+                                    <th scope="col">Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Televisão</td>
+                                    <td>Casas Bahia</td>
+                                    <td>R$1200</td>
+                                    <td>05/09/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Notebook</td>
+                                    <td>Casas Bahia</td>
+                                    <td>R$750</td>
+                                    <td>01/05/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Celular</td>
+                                    <td>Casas Bahia</td>
+                                    <td>R$600</td>
+                                    <td>02/04/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Frigideira</td>
+                                    <td>Amazon</td>
+                                    <td>R$300</td>
+                                    <td>01/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Livros</td>
+                                    <td>Amazon</td>
+                                    <td>R$120</td>
+                                    <td>02/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Colar</td>
+                                    <td>Joalheria do Zé</td>
+                                    <td>R$1800</td>
+                                    <td>01/01/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Caneta</td>
+                                    <td>Papelaria</td>
+                                    <td>R$75</td>
+                                    <td>03/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Notebook</td>
+                                    <td>Amazon</td>
+                                    <td>R$36</td>
+                                    <td>03/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Carro</td>
+                                    <td>BMW</td>
+                                    <td>R$255</td>
+                                    <td>03/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>Secador</td>
+                                    <td>Amazon</td>
+                                    <td>R$434</td>
+                                    <td>03/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>Casa</td>
+                                    <td>Corretora</td>
+                                    <td>R$1236</td>
+                                    <td>03/02/22</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>Óculos</td>
+                                    <td>Chilli Beans</td>
+                                    <td>R$422</td>
+                                    <td>03/02/22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /Content Page-wrapper -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>

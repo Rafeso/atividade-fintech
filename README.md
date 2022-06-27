@@ -25,7 +25,7 @@
   <br>- Investimentos<br>
   <br>- Despesas<br>
   <br>- Objetivos<br>
-  <br>- Carteira<br>
+  <br><h4>- Carteira<h4><br>
 
   <h2>FUNCIONALIDADES IMPLEMENTADAS<h2>
   
